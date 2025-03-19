@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	gap: 54px;
+
+	.post {
+		width: calc(100% - 430px);
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		.info {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			color: var(--text-primary);
+		}
+
+		.divisor {
+			display: flex;
+			width: 18px;
+			height: 1px;
+			background-color: var(--gray-300);
+		}
+	}
+
+	.sidebar {
+		width: 430px;
+	}
+}

@@ -1,0 +1,48 @@
+.title {
+	margin-bottom: 32px;
+}
+
+.post {
+	gap: 12px;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+
+	&:not(:last-child) {
+		border-right: 1px solid var(--gray-200);
+		padding-right: 24px;
+		margin-right: 24px;
+	}
+
+	.date {
+		margin-top: 12px;
+	}
+}
+
+.compact {
+	padding-bottom: 40px;
+
+	.wrapper {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.post {
+		flex-direction: row;
+		height: 150px;
+		margin-right: 0;
+		width: 100%;
+
+		&:last-child {
+			border-right: 1px solid var(--gray-200);
+			padding-right: 24px;
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+	}
+}

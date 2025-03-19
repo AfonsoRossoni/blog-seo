@@ -1,0 +1,14 @@
+.breadcrumb {
+	padding: 0 24px;
+
+	.separator {
+		margin: 0 16px;
+		color: var(--text-secondary);
+	}
+
+	.items {
+		li:last-child {
+			color: var(--primary-color);
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.footer {
+	padding: 45px 24px;
+
+	a {
+		color: var(--primary-color);
+		text-decoration: underline;
+	}
+
+	.title {
+		font-weight: 600;
+		margin-bottom: 32px;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 56px;
+
+		p {
+			font-size: 18px;
+			line-height: 32px;
+			color: #5e6772;
+		}
+
+		.logo {
+			width: 200px;
+		}
+
+		.socials {
+			display: flex;
+
+			a {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.scroller {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		cursor: pointer;
+
+		.arrow {
+			background-color: var(--primary-color);
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

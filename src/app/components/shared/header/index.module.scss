@@ -1,0 +1,33 @@
+.header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+
+	.nav {
+		gap: 34px;
+
+		.navItem {
+			color: #141514;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 400;
+			display: flex;
+
+			.arrow {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.search {
+		display: flex;
+		background-color: var(--primary-color);
+		border-radius: 30px;
+		gap: 12px;
+		color: #fff;
+		font-size: 19px;
+		line-height: 29px;
+		font-weight: 500;
+		padding: 10px 27px;
+	}
+}

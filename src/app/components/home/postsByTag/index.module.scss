@@ -1,0 +1,29 @@
+.postsByTag {
+	background-color: var(--gray-100);
+
+	.post {
+		display: flex;
+		gap: 12px;
+		width: 25%;
+
+		.title {
+			margin: 8px 0;
+		}
+
+		.content {
+			width: 60%;
+		}
+
+		.tag {
+			background-color: var(--orange-100);
+			color: var(--orange-300);
+			display: flex;
+			border-radius: 4px;
+			padding: 2px 8px;
+			width: fit-content;
+			align-items: center;
+			gap: 8px;
+			font-size: 12px;
+		}
+	}
+}

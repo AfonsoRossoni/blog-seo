@@ -1,0 +1,12 @@
+.mostViewedCategories {
+	&:not(.compact) {
+		align-items: center;
+		padding: 40px 0 54px 0;
+	}
+}
+
+.categories {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}

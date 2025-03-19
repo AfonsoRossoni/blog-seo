@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #2e8896;
+	--text-primary: #141514;
+	--text-secondary: #5e6772;
+	--gray-500: #7c7c7c;
+	--gray-300: #bdbdbd;
+	--gray-200: #e8e8e8;
+	--gray-100: #f5f6fa;
+	--light-bg: #e4f4fa;
+	--orange-300: #fe6d01;
+	--orange-100: #fff3e0;
+	--body-1: 16px;
+	--body-2: 14px;
+}
+
+body {
+	color: var(--text-secondary);
+}
+
+h1,
+h2,
+h3,
+h5 {
+	color: var(--text-primary);
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 130%;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+.body-1 {
+	font-size: var(--body-1);
+	line-height: 145%;
+	font-weight: 400;
+}
+
+.body-2 {
+	font-size: var(--body-2);
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.category {
+	background-color: var(--light-bg);
+	color: var(--primary-color);
+	width: fit-content;
+	padding: 0 8px;
+	border-radius: 4px;
+}
+
+.category-large {
+	padding: 8px 12px;
+	background-color: var(--gray-100);
+}
+
+/* Carousel styles */
+.carousel-root .carousel.carousel-slider {
+	overflow: initial;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+	gap: 24px;
+}

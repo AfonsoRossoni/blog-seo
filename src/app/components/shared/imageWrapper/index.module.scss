@@ -1,0 +1,38 @@
+.imageWrapper {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+
+	&:not(.fixedSize) {
+		padding-bottom: calc(100% / var(--aspect-ratio));
+	}
+
+	&.fixedSize {
+		padding-bottom: 0;
+
+		.image {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&.animate {
+		&:hover {
+			.image {
+				transform: scale(1.03);
+			}
+		}
+	}
+}
+
+.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.2s ease-in-out;
+	will-change: transform;
+}
