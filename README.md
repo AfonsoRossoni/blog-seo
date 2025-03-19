@@ -17,7 +17,7 @@ cp -i .env.local.example .env.local
 Rodar o comando abaixo para configurar o projeto, vai ser necessário também criar um read token [https://www.sanity.io/docs/preview-url-secret](https://www.sanity.io/docs/preview-url-secret)
 
 ```bash
-npm run sanity@latest init --env .env.local
+npm run setup
 ```
 
 Instalar as dependências e rodar o projeto
