@@ -4,6 +4,8 @@ Tecnologias: Next.js, Typescript, CSS Modules com Tailwind, Strapi CMS Headless,
 
 ## Demo
 
+[https://blog-seo-gray.vercel.app/](https://blog-seo-gray.vercel.app/)
+
 ## Rodar localmente usando o Sanity CLI
 
 Criar o arquivo `.env.local` usando o `.env.local.example` como base
