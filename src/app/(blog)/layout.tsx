@@ -16,17 +16,21 @@ export async function generateMetadata(): Promise<Metadata> {
 		query: settingsQuery,
 		stega: false,
 	});
-	const title = settings?.title || demo.title;
+	const defaultTitle = settings?.title || demo.title;
 	const description = settings?.description || demo.description;
 	const ogImage = resolveOpenGraphImage(settings?.ogImage);
 
+	const title = {
+		template: `%s | ${defaultTitle}`,
+		default: defaultTitle,
+	};
+
 	return {
-		title: {
-			template: `%s | ${title}`,
-			default: title,
-		},
+		title,
 		description,
 		openGraph: {
+			title,
+			description,
 			images: ogImage ? [ogImage] : [],
 		},
 		twitter: {

@@ -4,7 +4,6 @@ import { sanityFetch } from "@sanity/lib/fetch";
 import { postsByTagSlugQuery, tagSlugs } from "@sanity/lib/queries";
 import { cache } from "react";
 import DefaultPage from "@components/shared/defaultPage";
-import { generatePageMetadata } from "@utils/general";
 
 type Props = {
 	params: Promise<{ slug: string }>;
@@ -34,18 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const defaultDescription = "A tag que você está procurando não foi encontrada.";
 
 	if (!tag) {
-		return generatePageMetadata({
-			defaultTitle,
-			defaultDescription,
-		});
+		return {
+			title: defaultTitle,
+			description: defaultDescription,
+		};
 	}
 
-	return generatePageMetadata({
+	return {
 		title: tag.title || defaultTitle,
 		description: tag.description || undefined,
-		defaultTitle,
-		defaultDescription,
-	});
+	};
 }
 
 export default async function TagPage({ params }: Props) {
