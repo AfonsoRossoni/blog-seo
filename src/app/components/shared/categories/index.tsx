@@ -4,13 +4,8 @@ import { urlForImage } from "@utils/general";
 import Link from "next/link";
 import Image from "next/image";
 import st from "./index.module.scss";
-import { clsx } from "clsx";
 
-interface CategoriesProps {
-	type?: "full" | "compact";
-}
-
-export default async function Categories({ type = "full" }: CategoriesProps) {
+export default async function Categories() {
 	const categories = await sanityFetch({
 		query: categoriesQuery,
 		params: { order: "date" },
@@ -19,7 +14,7 @@ export default async function Categories({ type = "full" }: CategoriesProps) {
 	if (!categories || categories.length === 0) return null;
 
 	return (
-		<div className={clsx(st.categories, type === "compact" && st.compact)}>
+		<div className={st.categories}>
 			<h3>Navegue por categoria</h3>
 			<div className={st.items}>
 				{categories.map((category) => (

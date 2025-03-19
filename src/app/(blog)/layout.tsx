@@ -8,7 +8,7 @@ import { sanityFetch } from "@sanity/lib/fetch";
 import { settingsQuery } from "@sanity/lib/queries";
 import { resolveOpenGraphImage } from "@utils/general";
 import { draftMode } from "next/headers";
-import AlertBanner from "@components/shared/alert-banner";
+import AlertBanner from "@components/shared/alertBanner";
 import { VisualEditing } from "next-sanity";
 
 export async function generateMetadata(): Promise<Metadata> {

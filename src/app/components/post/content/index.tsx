@@ -1,7 +1,7 @@
 import { type PortableTextBlock } from "next-sanity";
 import ImageWrapper from "@components/shared/imageWrapper";
 import DateComponent from "@components/shared/date";
-import PortableText from "@components/post/portable-text";
+import PortableText from "@components/post/portableText";
 import st from "./index.module.scss";
 import { clsx } from "clsx";
 import MostViewedCategories from "@components/shared/mostViewedCategories";

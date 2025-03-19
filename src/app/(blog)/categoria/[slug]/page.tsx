@@ -55,7 +55,7 @@ export default async function CategoryPage({ params }: Props) {
 
 	return (
 		<DefaultPage
-			pathname={`/tag/${resolvedParams.slug}`}
+			pathname={`/categoria/${resolvedParams.slug}`}
 			posts={category}
 			slug={resolvedParams.slug}
 			query={postsByCategorySlugQuery}
