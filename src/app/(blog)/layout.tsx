@@ -10,6 +10,7 @@ import { resolveOpenGraphImage } from "@utils/general";
 import { draftMode } from "next/headers";
 import AlertBanner from "@components/shared/alertBanner";
 import { VisualEditing } from "next-sanity";
+import ThemeSwitch from "@components/shared/themeSwitch";
 
 export async function generateMetadata(): Promise<Metadata> {
 	const settings = await sanityFetch({
@@ -62,6 +63,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 					<Footer />
 				</section>
 				{isDraftMode && <VisualEditing />}
+				<ThemeSwitch />
 			</body>
 		</html>
 	);

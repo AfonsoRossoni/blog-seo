@@ -3,7 +3,7 @@
 	gap: 24px;
 
 	.button {
-		border-bottom: 1px solid var(--primary-color);
+		border-bottom: 1px solid var(--primary-300);
 		font-size: 21px;
 		color: var(--text-primary);
 		font-weight: 700;
@@ -12,7 +12,7 @@
 
 		&:hover,
 		&:focus {
-			color: var(--primary-color);
+			color: var(--primary-300);
 		}
 	}
 }

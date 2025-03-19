@@ -70,7 +70,7 @@ export default async function PostsByTag({ tag }: PostsByTagProps) {
 										</h5>
 										<Arrow
 											direction="right"
-											color="var(--primary-color)"
+											color="var(--primary-300)"
 											size={16}
 											aria-hidden="true"
 										/>

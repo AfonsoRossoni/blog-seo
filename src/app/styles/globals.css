@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root[data-theme="dark"] {
+	--bg-color: #1c1f20;
+	--text-primary: #fff;
+	--text-secondary: #f3f3f3;
+	--gray-100: #5b686d;
+	--primary-100: #34cfe7;
+}
+
 :root {
-	--primary-color: #2e8896;
+	--bg-color: #fff;
 	--text-primary: #141514;
 	--text-secondary: #5e6772;
+	--primary-300: #2e8896;
 	--gray-500: #7c7c7c;
 	--gray-300: #bdbdbd;
 	--gray-200: #e8e8e8;
@@ -19,6 +28,7 @@
 
 body {
 	color: var(--text-secondary);
+	background-color: var(--bg-color);
 }
 
 h1,
@@ -70,9 +80,13 @@ h5 {
 	gap: 32px;
 }
 
+:root[data-theme="dark"] .category {
+	color: var(--primary-100);
+}
+
 .category {
 	background-color: var(--light-bg);
-	color: var(--primary-color);
+	color: var(--primary-300);
 	width: fit-content;
 	padding: 0 8px;
 	border-radius: 4px;
