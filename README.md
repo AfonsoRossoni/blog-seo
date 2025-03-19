@@ -1,6 +1,6 @@
 # Blog Otimizado para SEO com Next.js
 
-Tecnologias: Next.js, Typescript, CSS Modules com Tailwind, Strapi CMS Headless, SSG para geração de páginas estáticas e ISR para atualizações periódicas sem precisar de build.
+Tecnologias: Next.js, Typescript, CSS Modules com Tailwind, Sanity CMS Headless, SSG para geração de páginas estáticas e ISR para atualizações periódicas sem precisar de build.
 
 ## Demo
 
